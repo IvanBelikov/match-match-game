@@ -1,1 +1,1 @@
-export type { CardState, CardPairState } from './types'
+export type { CardPairState } from './types'
