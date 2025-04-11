@@ -13,12 +13,10 @@ export const toTimerFormat = (timerValue: number | null) => {
   }
 
   const timerMs = timerValue % 100
-  const timerMsRender =
-    timerMs >= 10 ? timerMs.toString() : `0${timerMs.toString()}`
+  const timerMsRender = timerMs.toString().padStart(2, '0')
 
   const timerS = Math.floor(timerValue / 100)
-  const timerSRender =
-    timerS >= 10 ? timerS.toString() : `0${timerS.toString()}`
+  const timerSRender = timerS.toString().padStart(2, '0')
 
   return `${timerSRender}:${timerMsRender}`
 }
