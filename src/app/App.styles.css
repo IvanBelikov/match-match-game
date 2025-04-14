@@ -180,7 +180,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .game-board {
-    grid-template-columns: repeat(3, 1fr);
+  .game-container {
+    width: 85%;
   }
 }
